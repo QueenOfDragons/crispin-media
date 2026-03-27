@@ -300,7 +300,7 @@ function TestimonialCarousel({ items }: { items: typeof T.ro.testimonials }) {
   )
 }
 
-const PROOF_IMAGES = ['Live1.png','Live2.png','Live3.png','Live4.png']
+const PROOF_IMAGES = ['Live1.png', 'Live2.png', 'Live3.png', 'Live4.png']
 
 function ProofCarousel() {
   const [active, setActive] = useState(0)
