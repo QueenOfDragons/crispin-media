@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+
 import { useState, useEffect, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 
@@ -440,13 +440,12 @@ export default function Home() {
       {/* NAV */}
       <nav className="sticky top-0 z-50 bg-[#080810]/90 backdrop-blur-md border-b border-white/8 px-6 py-3 flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-3">
-<div className="w-9 h-9 relative">
-<img
-  src="/logo-dark.png"
-  alt="Logo"
-  className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(0,242,234,0.6)]"
-/>
-</div>
+          <div className="w-9 h-9 rounded-[10px] bg-[#0d0d1a] border border-[#00f2ea]/30 flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.01a8.16 8.16 0 004.78 1.52V7.07a4.85 4.85 0 01-1.01-.38z" fill="#00f2ea"/>
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.01a8.16 8.16 0 004.78 1.52V7.07a4.85 4.85 0 01-1.01-.38z" fill="#ff0050" opacity="0.5"/>
+            </svg>
+          </div>
           <div>
             <div className="text-[15px] font-black tracking-wider text-white">CRISPIN</div>
             <div className="text-[9px] text-[#00f2ea] tracking-[3px] font-medium">MEDIA AGENCY</div>
