@@ -300,7 +300,7 @@ function TestimonialCarousel({ items }: { items: typeof T.ro.testimonials }) {
   )
 }
 
-const PROOF_IMAGES = ['Live1.png', 'Live2.png', 'Live3.png', 'Live4.png']
+const PROOF_IMAGES = ['Live1.png','Live2.png','Live3.png','Live4.png']
 
 function ProofCarousel() {
   const [active, setActive] = useState(0)
@@ -314,7 +314,7 @@ function ProofCarousel() {
       {/* Immagine che ruota */}
       <div className="relative flex-shrink-0 w-[200px] h-[350px] rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
         <AnimatePresence mode="wait">
-          <motion.img key={active} src={`/${PROOF_IMAGES[active]}`} alt={`Live ${active+1}`}
+          <motion.img key={active} src={`/public/${PROOF_IMAGES[active]}`} alt={`Live ${active+1}`}
             initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             className="absolute inset-0 w-full h-full object-cover"
